@@ -5,20 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/KEY04.ICO" type="image/ico" sizes="16x16">
 </head>
 <body>
     <header>
-        <nav id="menu">
+        <nav class="menu">
             <a class="linkMenu" href="index.html">Jogos</a>
             <a class="linkMenu" href="hardware.html">Hardware</a>
             <a class="linkMenu" href="celulares.html">Celulares</a>
             <a class="linkMenu" href="pc-gamer.html">PC Gamer</a>
             <a class="linkMenu" href="contato.html">Contato</a>
             <a class="linkMenu" href="login.html">Login</a>
-    
         </nav>
     </header>
+    <section>
+        <h1>Jogos</h1>
+        <p>Clique no botão para mudar a cor do background da tag <code>body</code>.</p>
+        <button>Mudar a cor do fundo</button>
+        <hr><br>
+        <article>
+            <div style="display: inline-flexbox;">
+                <img src="./img/banner/game-retro.jpg" height="500px" width="100%" lt="banner baixado internet">
+                <p>
+                    ESTILOS DE LINHA
+                    O CSS permite estilizar vários tipos de borda em elementos da página, que pode ser uma linha lisa, pontilhada, com bordas arredondadas etc.
+                    
+                    As principais propriedades para estilizar as bordas das linhas são:
+                    
+                    Dotted: pontilhada.
+                    Dashed: tracejada.
+                    Solid: sólida.
+                    Double: dupla.
+                    Groove: com sulcos 3D; o efeito depende do valor da cor da borda.
+                    Ridge: 3D estriada; o efeito depende do valor da cor da borda.
+                    Inset: inserção 3D; o efeito depende do valor da cor da borda.
+                    Outset: inserção 3D; o efeito depende do valor da cor da borda.
+                    None: sem borda.
+                    Hidden: define uma borda oculta.
+                    Mixed: composição de diferentes bordas.
+                </p>
     
+            </div>
+        </article>
+    </section>
+    <footer>Desencolvido por: Luiz Amaro</footer>
 </body>
 </html>
+<!--evento no CSS-->
+<style> 
+    section article div img {
+        width: 100%;
+        height: 500px;
+        /*background: turquoise;*/
+        transition: width 1s;
+        transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+    
+    img:hover {
+        width:300px;
+    }
+</style>
+<!--JavaScript muda cor-->
+<script>
+    var btn = document.querySelector('button');
+
+    function random(number){
+        return Math.floor(Math.random()*(number+1));
+    }
+
+    btn.onclick = function (){
+    var rndCol = 'rgb('+ random(255)+','+random(255)+','+random(255)+')';
+        document.body.style.backgroundColor = rndCol;
+    }
+</script>

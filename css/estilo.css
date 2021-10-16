@@ -1,22 +1,43 @@
 body {
     background-color: chocolate;
 }
-#menu {
-    /*width: 100%;
-    height: 60px;*/
-    background-color: coral);
-    justify-content: center;
-    display: flex;
-    /*justify-content: space-between;*/
-}
-.linkMenu {
-    width: 100px;
-    border: 4px solid coral;
-    text-align: center;
-    background-color:white;
-    color: chocolate;
-    font-size: 12pt;
+.menu .linkMenu {
     text-decoration: none;
-    border-radius: 45px;
-    padding: 5px;
+    margin: 20px 10px 0px;
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    border: solid 2px rgb(76, 82, 94);
+    
+}
+.menu a:hover {
+    background-color: yellow;
+    color: blue;
+}
+.menu a:active {
+    color: rgb(18, 75, 35);
+}
+.menu a:visited {
+    color: rgb(10, 44, 15);
+}
+.menu a:focus {
+    border: brown;
+}
+h1 {
+    font: italic bold 50px arial, sans-serif;
+}
+section article div p {
+    border-style: double;
+    font: 12pt sans-serif;
+}
+footer {
+    background-color: crimson;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    
 }
